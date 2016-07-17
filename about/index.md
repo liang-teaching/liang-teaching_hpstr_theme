@@ -19,6 +19,3 @@ Welcome to Zhuobin's online math tutorials. The intent of this site is to provid
 
 <a href="mailto:{{ site.owner.email }}"><i class="fa fa-fw fa-envelope"></i> liang-teaching@outlook.com</a>
 
-
-
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
