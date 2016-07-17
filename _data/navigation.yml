@@ -1,7 +1,10 @@
 # Menu navigation links
 
-- title: Misc
-  url: /misc/
+- title: Resources
+  url: /resources/
+
+#- title: Misc
+#  url: /misc/
 
 #- title: External Link
 #  url: http://mademistakes.com
