@@ -1,0 +1,56 @@
+step 1 安装ruby
+		下载地址：http://rubyinstaller.org/downloads/
+		我的安装路径：D:\Applications\Ruby22
+		注意：安装提示窗口中，勾选“Add Ruby executables to your PATH”（添加到环境变量PATH）
+
+step 2 安装RubyGems
+		下载地址：https://rubygems.org/pages/download
+		下载的是zip文件，下好后解压到本地任意路径。譬如：我将文件解压缩到：D:\Download\WinApp\rubygems-2.6.6，然后在cmd中输入命令：
+		cd /d D:\Download\WinApp\rubygems-2.6.6
+		D:\Download\WinApp\rubygems-2.6.6> ruby setup.rb
+
+上述setp1,2参考http://playingfingers.com/2016/03/26/build-a-blog/
+
+step 3 DevKit
+	这是将来安装 json 需要。
+	地址：http://rubyinstaller.org/downloads
+	下载：DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe（针对Ruby 2.0 及以上）
+	解压缩，譬如：D:\Applications\DevKit
+	打开cmd，切换到上述目录：
+	cd /d D:\Applications\DevKit
+	然后安装：
+	D:\Applications\DevKit> ruby dk.rb install
+	(按提示，可能需要：edit the generated config.yml file to include installed Rubies not automatically discovered or remove Rubies you do not want to use the DevKit with.应该不会这么复杂，先跳过)
+
+
+step 4 
+	fork https://github.com/mmistakes/hpstr-jekyll-theme。
+	仓库改名成：liang-teaching.github.io。
+	clone到本地，譬如我是：C:\Users\zbliang\Documents\GitHub\liang-teaching.github.io
+	打开cmd终端，切换到该目录：
+	cd /d C:\Users\zbliang\Documents\GitHub\liang-teaching.github.io
+	然后输入bundle install安装：
+	C:\Users\zbliang\Documents\GitHub\liang-teaching.github.io> bundle install
+	该仓库根目录下有一个文件“Gemfile”，里面是
+		source "https://rubygems.org"
+
+		gem "json"
+		gem "jekyll"
+		gem "jekyll-sitemap"
+		gem "jekyll-feed"
+		gem "jekyll-paginate"
+		gem "jekyll-gist"
+
+	上述"bundle install"，应该就是安装上述的6个东西。如果没有step 3，则提示安装“json”出错。
+	这个安装时间比较长，可能是https://rubygems.org国内链接速度慢。网上有说可以通过taobao镜像。
+
+
+
+_includes\scripts.html 是 google_analytics
+
+_config.yml 中 disqus_shortname: liangteaching
+
+
+根目录中的文件夹 misc 和 resources 都是页面。
+
+调整页面：在 _data/navigation.yml 中设置
