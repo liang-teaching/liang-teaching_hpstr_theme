@@ -4,6 +4,7 @@ title: 中文+数学
 description: "Sample post with a background image CSS override."
 tags: [sample post]
 categories: [math, test]
+comments: true
 image:
   background: triangular.png
 ---
